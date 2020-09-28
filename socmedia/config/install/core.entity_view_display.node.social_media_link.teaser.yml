@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.social_media_link.field_social_media_icon
+    - field.field.node.social_media_link.field_social_media_link
+    - node.type.social_media_link
+  module:
+    - user
+id: node.social_media_link.teaser
+targetEntityType: node
+bundle: social_media_link
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_social_media_icon: true
+  field_social_media_link: true
