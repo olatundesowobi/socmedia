@@ -1,5 +1,5 @@
 # socmedia
-A module to allow the users to add social media blocks to theier site. This block should provide links to social media sites associated with the website.
+A module to allow the users to add social media block to their site. This block should provide links to social media sites associated with the website.
 
 ## Installation
 The Module requires the features module to be installed as a prerequisite. 
