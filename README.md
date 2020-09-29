@@ -33,7 +33,7 @@ You will need to provide :
 1. To Provide the Social media links there is a Block called Example that can be placedd on the site on the Block Layout page /admin/structure/block.
 2. Once the Block is placed you should get a list of Social media links on the pages where the Block is made available.
 
-## Setting up the Social media links to Use Font Awesom 
+## Setting up the Social media links to Use Font Awesome 
 
 1. if you go to the admin page for the sociam media links /admin/config/system/socialmedia you will be provided the option to use font Awesome.
 2. Choose Yes and Submit.
