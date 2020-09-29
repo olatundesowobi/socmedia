@@ -1,4 +1,4 @@
-# Modules to profvide Social media links on the website
+# Modules to provide Social media links on the website
 
 The solution has two diffrent modules that can be used to provide the social media links on the site. Both of them should be installed  in order to allow the user to manage thier social media links.
 
