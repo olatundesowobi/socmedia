@@ -54,4 +54,8 @@ Its possible to customize the social media links by alterring the views that are
  - socialmedia view for the CMS images on the site
  - socialmedia view for the CMS Font Awesom images on the site
  
+ ## Note
+ 
+ 1. The CDN will determine the available css that will be available. If the CDN does not have those styles they can not be presented.
+ 2. To mitigate that the site allows the user to use thier own images. and once the font awesome styles are available switch to use font awesome. This can be used as a mitigation in case the service is not available or the available styles have not been configured on the CDN.
  
