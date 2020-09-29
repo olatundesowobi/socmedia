@@ -1,0 +1,49 @@
+# Custom module library for general purposes.
+socialmedia:
+  js:
+    js/socialmedia.js: {}
+  css:
+    component:
+      css/socialmedia.css: {}
+  dependencies:
+    - core/drupalSettings
+    - socialmedia/jquery-labelauty
+
+# Third-party library (self hosted).
+jquery-labelauty:
+  remote: https://github.com/fntneves/jquery-labelauty
+  version: 1.1.0
+  license:
+    name: MIT
+    url: https://github.com/fntneves/jquery-labelauty/blob/v1.1.0/LICENSE
+    gpl-compatible: true
+  js:
+    /libraries/jquery-labelauty/source/jquery-labelauty.js: {}
+  css:
+    component:
+      /libraries/jquery-labelauty/source/jquery-labelauty.css: {}
+  dependencies:
+    - core/jquery
+
+# Third-party library (CDN).
+vuejs:
+  remote: https://vuejs.org
+  version: 2.0.5
+  license:
+    name: MIT
+    url: https://github.com/vuejs/vue/blob/dev/LICENSE
+    gpl-compatible: true
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js: {type: external, minified: true}
+font-awesome:
+  header: true
+  remote: https://fortawesome.github.io/Font-Awesome/
+  version: 4.5.0
+  license:
+    name: MIT
+    url: https://fortawesome.github.io/Font-Awesome/license/
+    gpl-compatible: true
+  css:
+    component:
+      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css: {   type: external, minified: true }
+

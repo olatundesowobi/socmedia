@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_font_awesome_code
+    - node.type.social_media_link
+id: node.social_media_link.field_font_awesome_code
+field_name: field_font_awesome_code
+entity_type: node
+bundle: social_media_link
+label: 'Font Awesome Code'
+description: 'This is the name of the class that uses the Fontawesome code for this particular icon'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

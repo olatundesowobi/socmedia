@@ -1,0 +1,7 @@
+socialmedia.settings_form:
+  path: '/admin/config/system/socialmedia'
+  defaults:
+    _title: 'socialmedia settings'
+    _form: 'Drupal\socialmedia\Form\SettingsForm'
+  requirements:
+    _permission: 'administer socialmedia configuration'

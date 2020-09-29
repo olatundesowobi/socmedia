@@ -1,0 +1,6 @@
+name: socialmedia
+type: module
+description: This is a module for presenting social media links
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9

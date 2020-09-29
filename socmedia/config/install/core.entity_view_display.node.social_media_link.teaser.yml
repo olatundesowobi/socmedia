@@ -3,6 +3,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.social_media_link.field_font_awesome_code
+    - field.field.node.social_media_link.field_font_awesone_code
     - field.field.node.social_media_link.field_social_media_icon
     - field.field.node.social_media_link.field_social_media_link
     - node.type.social_media_link
@@ -19,5 +21,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_font_awesome_code: true
+  field_font_awesone_code: true
   field_social_media_icon: true
   field_social_media_link: true

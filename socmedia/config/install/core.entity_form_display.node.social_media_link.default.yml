@@ -2,6 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.social_media_link.field_font_awesome_code
+    - field.field.node.social_media_link.field_font_awesone_code
     - field.field.node.social_media_link.field_social_media_icon
     - field.field.node.social_media_link.field_social_media_link
     - image.style.thumbnail
@@ -10,6 +12,7 @@ dependencies:
     - image
     - link
     - path
+    - text
 id: node.social_media_link.default
 targetEntityType: node
 bundle: social_media_link
@@ -21,6 +24,22 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_font_awesome_code:
+    weight: 124
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_font_awesone_code:
+    weight: 125
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
   field_social_media_icon:
     weight: 122
     settings:

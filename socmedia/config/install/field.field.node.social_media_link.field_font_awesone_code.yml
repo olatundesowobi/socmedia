@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_font_awesone_code
+    - node.type.social_media_link
+  module:
+    - text
+id: node.social_media_link.field_font_awesone_code
+field_name: field_font_awesone_code
+entity_type: node
+bundle: social_media_link
+label: 'Font Awesone Code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
