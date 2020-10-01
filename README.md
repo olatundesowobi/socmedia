@@ -28,7 +28,7 @@ You will need to provide :
   - The Alternative text label link to the social media website
   - The font awesome Icon link i.e for facebook fa-facebook
   - Ignore the Image Field
-  - In the Image Icon Field place a fallback image if the usite is unable to use font awesome
+  - In the Image Icon Field place a fallback image if the website is unable to use font awesome
   
 ## Setting up the Block 
 
@@ -40,7 +40,7 @@ You will need to provide :
 1. if you go to the admin page for the sociam media links /admin/config/system/socialmedia you will be provided the option to use font Awesome.
 2. Choose Yes and Submit.
 3. To complete goto the Performance page /admin/config/development/performance and clear all cache. 
-4 if you view. page with the Example Block it should use the Font Awesome links
+4 if you view. page with the Social Media Website Block it should use the Font Awesome links
 
 ## Setting up the Social media links to Not Use Font Awesome
 
