@@ -54,9 +54,14 @@ You will need to provide :
 Its possible to customize the social media links by alterring the views that are presented in either case. The Example block based on config displays either :
 
  - socialmedia view for the CMS images on the site
- - socialmediafa view for the CMS Font Awesom images on the site
+ - socialmediafa view for the CMS Font Awesom icons on the site
  
  ## Note
  
  1. To mitigate that the site allows the user to use thier own images.Once the font awesome styles are available admins cann switch to use font awesome. This can be used as a mitigation in case the service is not available or the available styles have not been configured on the CDN.
+ 
+ 2. It is possible to use the views directly and not use the block that acts as the switch between the two diffrent types of views
+  
+  - socialmedia view for the CMS images on the site
+  - socialmediafa view for the CMS Font Awesom icons on the site
  
