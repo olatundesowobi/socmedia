@@ -5,13 +5,18 @@ The solution has two diffrent modules that can be used to provide the social med
 
 ## Installation
 
-1.The Module requires the features module to be installed as a prerequisite. 
+1.The Module requires the :
+  
+  - features module
+  - fontawesomemodule 
+  
+  to be installed as a prerequisite. 
 
-2. Once the features module is installled you will need to install the socmedia module and and the socialmedia module.
+2. Once the features module is installled you will need to install the modules :
+  - socmedia module
+  - socialmedia module
 
-3. Once installed The URL for the CDN must be provided in the for Font Awesome should be set in the /modules/custom/socialmedia/socialmedia.routing.yml on line 48
-
-4. Remember to clear the cache once installation is complete
+3. Remember to clear the cache once installation is complete
 
 ## Setting up Social Media Links
 
@@ -19,18 +24,15 @@ The solution has two diffrent modules that can be used to provide the social med
 
 You will need to provide :
   - The name of the social media site
-  - The an image of the social media website in case font awesome is not available. (this is automatically resized by views)
-  - a link to the social media website
-  - alternnative text for the link
-  - the Font Awesome Code in a text field for example '<i class="fab fa-facebook-square"></i>'
-  - The Fonnt Awesome code in a rich text editor. Make sure to make Text Format Full HTML and click Source on 
-    editor before placing the Font Awesome code i.e '<i class="fab fa-facebook-square"></i>'   
-    This should be identical to the textfield entry. Note: There may be an error with rendering in the HTMLEditor but the change is saved
-  - Don't forget to press save and repeat this for all the Social media Icons
+  - The URL for the social media site
+  - The Alternative text label link to the social media website
+  - The font awesome Icon link i.e for facebook fa-facebook
+  - Ignore the Image Field
+  - In the Image Icon Field place a fallback image if the usite is unable to use font awesome
   
 ## Setting up the Block 
 
-1. To Provide the Social media links there is a Block called Example that can be placedd on the site on the Block Layout page /admin/structure/block.
+1. To Provide the Social media links there is a Block called Social Media Websites that can be placedd on the site on the Block Layout page /admin/structure/block.
 2. Once the Block is placed you should get a list of Social media links on the pages where the Block is made available.
 
 ## Setting up the Social media links to Use Font Awesome 
@@ -56,6 +58,5 @@ Its possible to customize the social media links by alterring the views that are
  
  ## Note
  
- 1. The CDN will determine the available css that will be available. If the CDN does not have those styles they can not be presented.
- 2. To mitigate that the site allows the user to use thier own images. and once the font awesome styles are available switch to use font awesome. This can be used as a mitigation in case the service is not available or the available styles have not been configured on the CDN.
+ 1. To mitigate that the site allows the user to use thier own images.Once the font awesome styles are available admins cann switch to use font awesome. This can be used as a mitigation in case the service is not available or the available styles have not been configured on the CDN.
  
