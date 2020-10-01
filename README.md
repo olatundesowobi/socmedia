@@ -54,7 +54,7 @@ You will need to provide :
 Its possible to customize the social media links by alterring the views that are presented in either case. The Example block based on config displays either :
 
  - socialmedia view for the CMS images on the site
- - socialmedia view for the CMS Font Awesom images on the site
+ - socialmediafa view for the CMS Font Awesom images on the site
  
  ## Note
  
