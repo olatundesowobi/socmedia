@@ -2,16 +2,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_font_awesome_code
-    - field.storage.node.field_font_awesone_code
-    - field.storage.node.field_social_media_icon
+    - field.storage.node.field_icon
     - field.storage.node.field_social_media_link
-    - image.style.50x50
   module:
-    - image
+    - fontawesome
     - link
     - node
-    - text
     - user
 id: socialmediafa
 label: socialmediafa
@@ -134,22 +130,22 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_social_media_icon:
-          id: field_social_media_icon
-          table: node__field_social_media_icon
-          field: field_social_media_icon
+        field_icon:
+          id: field_icon
+          table: node__field_icon
+          field: field_icon
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
             make_link: true
             path: '{{ field_social_media_link }} '
             absolute: false
-            external: true
+            external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
@@ -182,137 +178,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: image
+          click_sort_column: icon_name
+          type: fontawesome_icon_formatter
           settings:
-            image_style: 50x50
-            image_link: ''
+            layers: 0
           group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_font_awesome_code:
-          id: field_font_awesome_code
-          table: node__field_font_awesome_code
-          field: field_font_awesome_code
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: true
-            text: '{{ field_font_awesome_code__value }} '
-            make_link: false
-            path: '{{ field_social_media_link }} '
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_font_awesone_code:
-          id: field_font_awesone_code
-          table: node__field_font_awesone_code
-          field: field_font_awesone_code
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_default
-          settings: {  }
-          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -433,9 +303,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_font_awesome_code'
-        - 'config:field.storage.node.field_font_awesone_code'
-        - 'config:field.storage.node.field_social_media_icon'
+        - 'config:field.storage.node.field_icon'
         - 'config:field.storage.node.field_social_media_link'
   block_1:
     display_plugin: block
@@ -452,7 +320,5 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_font_awesome_code'
-        - 'config:field.storage.node.field_font_awesone_code'
-        - 'config:field.storage.node.field_social_media_icon'
+        - 'config:field.storage.node.field_icon'
         - 'config:field.storage.node.field_social_media_link'

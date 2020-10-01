@@ -2,17 +2,17 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.social_media_link.field_font_awesome_code
-    - field.field.node.social_media_link.field_font_awesone_code
-    - field.field.node.social_media_link.field_social_media_icon
+    - field.field.node.social_media_link.field_icon
+    - field.field.node.social_media_link.field_icon_image
+    - field.field.node.social_media_link.field_image
     - field.field.node.social_media_link.field_social_media_link
     - image.style.thumbnail
     - node.type.social_media_link
   module:
+    - fontawesome
     - image
     - link
     - path
-    - text
 id: node.social_media_link.default
 targetEntityType: node
 bundle: social_media_link
@@ -24,24 +24,22 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_font_awesome_code:
-    weight: 124
-    settings:
-      size: 60
-      placeholder: ''
+  field_icon:
+    weight: 126
+    settings: {  }
     third_party_settings: {  }
-    type: string_textfield
+    type: fontawesome_icon_widget
     region: content
-  field_font_awesone_code:
-    weight: 125
+  field_icon_image:
+    weight: 128
     settings:
-      rows: 5
-      placeholder: ''
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
-    type: text_textarea
+    type: image_image
     region: content
-  field_social_media_icon:
-    weight: 122
+  field_image:
+    weight: 127
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail

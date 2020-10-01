@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_social_media_icon
+    - field.storage.node.field_icon_image
     - field.storage.node.field_social_media_link
     - image.style.50x50
   module:
@@ -126,10 +126,10 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_social_media_icon:
-          id: field_social_media_icon
-          table: node__field_social_media_icon
-          field: field_social_media_icon
+        field_icon_image:
+          id: field_icon_image
+          table: node__field_icon_image
+          field: field_icon_image
           relationship: none
           group_type: group
           admin_label: ''
@@ -141,7 +141,7 @@ display:
             make_link: true
             path: '{{ field_social_media_link }} '
             absolute: false
-            external: true
+            external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
@@ -300,7 +300,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_social_media_icon'
+        - 'config:field.storage.node.field_icon_image'
         - 'config:field.storage.node.field_social_media_link'
   block_1:
     display_plugin: block
@@ -317,5 +317,5 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_social_media_icon'
+        - 'config:field.storage.node.field_icon_image'
         - 'config:field.storage.node.field_social_media_link'

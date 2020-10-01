@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icon
+    - node.type.social_media_link
+  module:
+    - fontawesome
+id: node.social_media_link.field_icon
+field_name: field_icon
+entity_type: node
+bundle: social_media_link
+label: Icon
+description: 'The icon that comes from font Awesome'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

@@ -2,38 +2,40 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.social_media_link.field_font_awesome_code
-    - field.field.node.social_media_link.field_font_awesone_code
-    - field.field.node.social_media_link.field_social_media_icon
+    - field.field.node.social_media_link.field_icon
+    - field.field.node.social_media_link.field_icon_image
+    - field.field.node.social_media_link.field_image
     - field.field.node.social_media_link.field_social_media_link
     - node.type.social_media_link
   module:
+    - fontawesome
     - image
     - link
-    - text
     - user
 id: node.social_media_link.default
 targetEntityType: node
 bundle: social_media_link
 mode: default
 content:
-  field_font_awesome_code:
-    weight: 104
+  field_icon:
+    weight: 106
     label: above
     settings:
-      link_to_entity: false
+      layers: false
     third_party_settings: {  }
-    type: string
+    type: fontawesome_icon_formatter
     region: content
-  field_font_awesone_code:
-    weight: 105
+  field_icon_image:
+    weight: 108
     label: above
-    settings: {  }
+    settings:
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
-    type: text_default
+    type: image
     region: content
-  field_social_media_icon:
-    weight: 102
+  field_image:
+    weight: 107
     label: above
     settings:
       image_style: ''

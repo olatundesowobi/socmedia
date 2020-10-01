@@ -36,6 +36,7 @@ class ExampleBlock extends BlockBase {
         '#markup' => \Drupal::service('renderer')->render($socialmedia) ,                                   
       ]; 
     }
+    $build['subject'] = 'Social Media';
     return $build;
   }
 

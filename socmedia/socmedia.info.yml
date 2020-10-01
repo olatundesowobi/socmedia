@@ -6,6 +6,7 @@ dependencies:
   - block
   - field
   - file
+  - fontawesome
   - image
   - link
   - menu_ui
